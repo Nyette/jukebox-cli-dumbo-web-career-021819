@@ -41,7 +41,7 @@ def play(my_songs)
   # If it is, play the song, using the system 'open <file path>' syntax
   # Get the file path of the song by looking it up in the my_songs hash
   puts "Please enter a song name:"
-  user_response = gets.chomp.to_s
+  user_response = gets.chomp
   if my_songs.has_key?(user_response)
     path_to_file = my_songs[user_response]
     file_name = path_to_file[-6..-1]
