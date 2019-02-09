@@ -43,8 +43,8 @@ def play(my_songs)
   puts "Please enter a song name:"
   user_response = gets.chomp.to_s
   if my_songs.has_key?(user_response)
-    location = my_songs[user_response]
-    file_name = location[-6..-1]
+    path_to_file = my_songs[user_response]
+    file_name = path_to_file[-6..-1]
     system "open #{file_name}"
   else
     puts "Invalid input, please try again"
