@@ -44,6 +44,7 @@ def play(my_songs)
   user_response = gets.chomp
   if my_songs.has_key?(user_response)
     location = my_songs[user_response]
+    
     system "open #{location}"
   else
     puts "Invalid input, please try again"
