@@ -4,13 +4,13 @@
 # with the correct path to this directory on your computer
 
 # my_songs = {
-# "Go Go GO" => /home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/01.mp3,
-# "LiberTeens" => /home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/02.mp3,
-# "Hamburg" =>  /home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/03.mp3,
-# "Guiding Light" => /home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/04.mp3,
-# "Wolf" => /home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/05.mp3,
-# "Blue" => /home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/06.mp3,
-# "Graduation Failed" => /home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/07.mp3
+# "Go Go GO" => "/home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/01.mp3",
+# "LiberTeens" => "/home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/02.mp3",
+# "Hamburg" => "/home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/03.mp3",
+# "Guiding Light" => "/home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/04.mp3",
+# "Wolf" => "/home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/05.mp3",
+# "Blue" => "/home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/06.mp3",
+# "Graduation Failed" => "/home/spectacular-page-9209/jukebox-cli-dumbo-web-career-021819/audio/Emerald-Park/07.mp3"
 # }
 
 
@@ -44,7 +44,7 @@ def play(my_songs)
   user_response = gets.chomp
   if my_songs.has_key?(user_response)
     location = my_songs[user_response]
-    system 'open ' + location
+    system "open #{}"
   else
     puts "Invalid input, please try again"
   end
